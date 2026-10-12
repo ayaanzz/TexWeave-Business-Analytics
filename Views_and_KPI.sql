@@ -225,7 +225,7 @@ SELECT
 FROM dbo.vw_InventoryStockHealthAndValuation
 GROUP BY StockRiskCategory
 ORDER BY TotalValuationAtCost DESC;
-GO
+
 
 -- KPI 4: Vendor Delivery Performance & Fulfillment Ranking
 SELECT 
@@ -239,7 +239,7 @@ SELECT
 FROM dbo.vw_ProcurementSupplierFulfillment
 GROUP BY SupplierID
 ORDER BY TotalCommittedSpend DESC;
-GO
+
 
 
 -- ============================================================================
@@ -257,4 +257,3 @@ SELECT TOP 5 * FROM dbo.vw_ProcurementSupplierFulfillment;
 
 -- View Validation 4: Sales OTIF View
 SELECT TOP 5 * FROM dbo.vw_SalesFulfillmentAndLogisticsOTIF;
-GO
